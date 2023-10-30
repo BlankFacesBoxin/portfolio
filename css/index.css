@@ -1,0 +1,246 @@
+html {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.mainArea {
+  width: 100%;
+  height: 100vh;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  background: url(../img/pofo_bg.jpg) no-repeat center/cover;
+}
+.bg_text {
+  width: 30vw;
+  height: 50vh;
+  padding: 30px;
+  border-radius: 30px;
+  margin-left: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  transition: all 0.5s;
+  z-index: 10;
+}
+.bg_text ul {
+  display: none;
+}
+.mainArea .title {
+  width: 30vw;
+  height: 50vh;
+  padding: 30px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  z-index: 11;
+  color: #fff;
+  position: relative;
+}
+.mainArea .title h2 span {
+  color: #ffcc00;
+}
+.mainArea .title h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.mainArea .title p {
+  line-height: 2;
+}
+.notice {
+  font-size: 14px;
+  color: #ccc;
+}
+.first_pofo {
+  background: url(../img/greenVet.mp4) no-repeat center/cover;
+  position: relative;
+}
+.mainVideo {
+  width: 100%;
+  height: 100vh;
+}
+.mainVideo video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.first_pofo .title {
+  z-index: 10;
+  position: absolute;
+}
+.first_pofo .title h2 {
+  font-family: 'ITC Avant Garde Gothic Std Demi', sans-serif;
+}
+.first_pofo .title h2 span {
+  color: #88cbc9;
+}
+.skill span {
+  color: steelblue;
+  font-weight: bold;
+}
+.plot span {
+  color: thistle;
+  font-weight: bold;
+}
+.link {
+  position: absolute;
+  bottom: 10%;
+}
+.link a {
+  border: 1px solid black;
+  padding: 10px 30px;
+  transition: all 0.5s;
+}
+.link a:hover {
+  background: #000;
+}
+.secound_pofo {
+  background: url(../img/royalHotel.PNG) no-repeat center/cover;
+}
+.secound_pofo h2 {
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+}
+.secound_pofo .title h2 span {
+  color: #9b9b9b;
+}
+/* sideMenu */
+.sideMenu.onClick {
+  background: #fff;
+  border: 1px solid #000;
+}
+.sideMenu {
+  display: block;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  background: #000;
+  border-radius: 50%;
+  position: fixed;
+  cursor: pointer;
+  z-index: 50;
+  transition: all 0.5s;
+  top: 25%; left: 60px;
+
+}
+.sideMenu > div.onBg {
+  background: #fff;
+  border: 1px solid #000;
+  transition: all 0.5s;
+}
+.sideMenu span i.onColor {
+  background: #000;
+}
+.sideMenu span i:first-child {
+  position: absolute;
+  background: #fff;
+  width: 15px;
+  height: 1px;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sideMenu span i:nth-child(2) {
+  position: absolute;
+  background: #fff;
+  width: 15px;
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sideMenu span i:last-child {
+  position: absolute;
+  background: #fff;
+  width: 15px;
+  height: 1px;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sideMenu span i.onColor:first-child {
+  background: #000;
+}
+.sideMenu span i.onColor:nth-child(2) {
+  background: #000;
+}
+.sideMenu span i.onColor:last-child {
+  background: #000;
+}
+.sideMenu.onClick li {
+  display: inline-block;
+  margin-left: 150px;
+}
+.sideMenu.onClick li::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  height: 2px;
+  background: #88cbc9;
+  transform: scaleX(0);
+  transition: all 0.5s;
+  transform-origin: left;
+}
+.bg_text.sideBar {
+  background: #fff;
+  z-index: 20;
+}
+.bg_text.sideBar .greenVet {
+  font-family: 'ITC Avant Garde Gothic Std Demi', sans-serif;
+}
+.bg_text.sideBar .greenVet:hover i {
+  color: #88cbc9;
+  transition: all 0.5s;
+}
+.bg_text.sideBar .greenVet span::after {
+  background: #88cbc9;
+}
+.bg_text.sideBar .royal {
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+}
+.bg_text.sideBar .royal:hover i {
+  color: #9b9b9b;
+  transition: all 0.5s;
+}
+.bg_text.sideBar .royal span::after {
+  background: #9b9b9b;
+}
+.bg_text.sideBar .samcheng {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 500;
+}
+.bg_text.sideBar ul {
+  display: block;
+}
+.bg_text.sideBar li {
+  cursor: pointer;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+.bg_text.sideBar li span {
+  position: relative;
+}
+.bg_text.sideBar li span::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  height: 2px;
+  background: #000;
+  transform: scaleX(0);
+  transition: all 0.5s;
+  transform-origin: left;
+}
+.bg_text.sideBar li span:hover::after {
+  transform: scaleX(1);
+}
+/* third_pofo */
+.third_pofo {
+  background: url(../img/samcheonggak.PNG) no-repeat center/cover;
+}
+.third_pofo h2 {
+  font-family: 'Noto Serif KR', serif;
+}
